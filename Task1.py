@@ -124,16 +124,24 @@ else:
                 guess = int(input("Enter your next choice of numbers: "))
         
         if key == guess:
+		
             countB += 1
             print("Congratulations you guessed the number!") 
             print(" It took you only ",countB," tries.")
         
         if countA == countB:
+		
+	    print("\n")	
             print("DRAW")
+		
         elif countA > countB:
+		
+	    print("\n")	
             print("Player 1 wins the game!")
             print("Player 1 is the Mastermind")
         else:
+		
+            print("\n")		
             print("Player 2 wins the game!")
             print("Player 2 is the Mastermind")
             
