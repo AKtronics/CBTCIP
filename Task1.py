@@ -1,3 +1,4 @@
+
 # MASTERMIND GAME
 '''
 Two players play the game against each other; let’s assume Player 1 and Player 2.
@@ -58,6 +59,7 @@ else:
         elif (cnt == 0):
         
           print("None of the numbers in your input match.")
+          print("--------------------------------------------------")
         
           guess = int(input("Enter your next choice of numbers: "))
         
@@ -68,6 +70,7 @@ else:
         print("Congratulations you guessed the number!") 
         
         print(" It took you only ",countA," tries.")
+        print("--------------------------------------------------")
         
 #player 1's turn
         
@@ -120,6 +123,7 @@ else:
             elif (cnt == 0):
         
                 print("None of the numbers in your input match.")
+                print("--------------------------------------------------")
         
                 guess = int(input("Enter your next choice of numbers: "))
         
@@ -128,20 +132,19 @@ else:
             countB += 1
             print("Congratulations you guessed the number!") 
             print(" It took you only ",countB," tries.")
+            print("--------------------------------------------------")
         
         if countA == countB:
-		
-	    print("\n")	
+            print("\n")
             print("DRAW")
 		
         elif countA > countB:
-		
-	    print("\n")	
+            print("\n")
             print("Player 1 wins the game!")
             print("Player 1 is the Mastermind")
         else:
-		
             print("\n")		
             print("Player 2 wins the game!")
             print("Player 2 is the Mastermind")
+
             
